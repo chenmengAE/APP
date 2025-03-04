@@ -1,0 +1,41 @@
+<view class="contain">
+  <image src="../../image/background2.jpeg" />
+  <!-- 头部 -->
+  <view>
+    <text class="title">注册页面</text>
+  </view>
+  <!-- 表单部分 -->
+  <view class="from">
+    <form bindsubmit="submit">
+      <!-- 账号 -->
+      <label for="name">
+        <text>账号:</text>
+        <input type="text" placeholder="请输入账号" name="name" />
+      </label>
+      <!-- 密码 -->
+      <label for="password">
+        <text>密码:</text>
+        <input type="password" placeholder="请输入密码" name="password" />
+      </label>
+      <!--二次确认-->
+      <label for="password">
+        <text>确认:</text>
+        <input type="password" placeholder="请输入密码" name="passwords" />
+      </label>
+      <!-- 昵称 -->
+      <label for="name">
+        <text>昵称:</text>
+        <input type="text" placeholder="请输入昵称" name="nickname" />
+      </label>
+      <!-- 是否同意 -->
+      <label for="gander">
+        <switch type="checkbox" bindchange="agree"></switch>
+        <text style="width:300px">是否同意以上协议</text>
+      </label>
+      <!-- 提交按钮 -->
+      <label for="">
+        <button type="primary" form-type="submit">提交</button>
+      </label>
+    </form>
+  </view>
+</view>

@@ -1,0 +1,31 @@
+<!--pages/login/login.wxml-->
+<view class="contain">
+  <image src="../../image/background2.jpeg"></image>
+  <view>
+    <text class="title">登录页面</text>
+  </view>
+  <view class="form">
+    <form bindsubmit="submit">
+      <label for="name">
+        <text>账号:</text>
+        <input type="text" placeholder="请输入账号" name="name" />
+      </label>
+      <label for="password">
+        <text>密码:</text>
+        <input type="password" placeholder="请输入密码" name="password" />
+      </label>
+      <label>
+        <button form-type="submit" class="btn">登陆</button>
+      </label>
+      <view bindtap="regest" class="regest">注册</view>
+      <view bindtap="findBack" class="findBack">忘记密码？</view>
+    </form>
+  </view>
+  <view class="users">
+    <text>登陆的账号</text>
+    <view wx:for="{{ user }}" wx:key="*this">
+      账号:{{ item.name }} ---- 密码{{ item.password }}
+    </view>
+  </view>
+
+</view>

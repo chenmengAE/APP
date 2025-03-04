@@ -1,0 +1,11 @@
+App({
+  globalData:{
+    id:null,
+    nickname:null,
+    phone:null,
+    qq:null,
+    constellation:null,
+    order_name:["景点"],
+    order_time:["时间"]
+  }
+})

@@ -1,0 +1,17 @@
+<!--pages/order/order.wxml-->
+<view class="container">
+  <scroll-view scroll-x style="width:90%;white-space: nowrap;margin-top:20px;">
+    <block wx:for="{{contentList}}" >
+      <view class="view-column" >
+        <block wx:for="{{item}}" wx:for-index="subIndex" wx:for-item="subItem">
+        <view style="width:100%;background:{{subIndex%2==0?'rgb(206, 236, 255)':'white'}};padding:10px 0;border:1px solid white">
+          <text class="text-shrink" style="width:100%">{{subItem}}</text>
+        </view>
+        </block>
+      </view>
+    </block>
+  </scroll-view>
+</view>
+<view class="home" bindtap="home">
+<image src="../../image/home.jpeg"></image>
+</view>

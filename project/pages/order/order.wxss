@@ -1,0 +1,34 @@
+/* pages/order/order.wxss */
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-shrink {
+  font-size: 16px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+.view-column{
+  width:50%;display:inline-block;
+}
+
+.header{
+  margin-top: 10rpx;
+  text-align: center;
+}
+.home{
+  position: fixed;
+  bottom: 0rpx;
+  margin: 50rpx;
+  }
+  
+  .home image{
+    width: 50rpx;
+    height: 50rpx;
+  }

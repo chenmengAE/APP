@@ -1,0 +1,17 @@
+<!--pages/person/person.wxml-->
+<view class="contain">
+<image src="../../image/background2.jpeg"></image>
+  <view class="head">个人资料</view>
+  <view class="content">
+    <view>昵称：{{nickname}}</view>
+    <view>星座：{{constellation}}</view>
+    <view>QQ：{{qq}}</view>
+    <view>电话：{{phone}}</view>
+  </view>
+  <view>
+  <button type="primary" bindtap="change">编辑资料</button>
+  </view>
+</view>
+<view class="home" bindtap="home">
+<image src="../../image/home.jpeg"></image>
+</view>

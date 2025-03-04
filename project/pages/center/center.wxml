@@ -1,0 +1,12 @@
+<!--pages/center/center.wxml-->
+<view class="avatar">
+  <image src="../../image/head.jpeg" mode="aspectFill"></image>
+</view>
+<view class="menu">
+  <view bindtap="info">个人资料
+    <image class="arrow" src="../../image/arrow.png"></image>
+  </view>
+  <view bindtap="order">我的足迹
+    <image class="arrow" src="../../image/arrow.png"></image>
+  </view>
+</view>

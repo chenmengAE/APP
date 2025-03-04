@@ -1,0 +1,26 @@
+<!--pages/find/find.wxml-->
+<view class="contain">
+<image src="../../image/background2.jpeg"></image>
+  <view>
+    <text class="title">找回密码</text>
+  </view>
+  <view class="form">
+    <form bindsubmit="submit">
+      <label for="name">
+        <text>账号:</text>
+        <input type="text" placeholder="请输入账号" name="name" />
+      </label>
+      <label for="password">
+        <text>密码:</text>
+        <input type="password" placeholder="请输入密码" name="password" />
+      </label>
+      <label for="password">
+        <text>确认:</text>
+        <input type="password" placeholder="请确认密码" name="passwords" />
+      </label>
+      <label>
+        <button form-type="submit" class="btn">找回</button>
+      </label>
+    </form>
+  </view>
+</view>

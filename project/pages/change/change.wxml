@@ -1,0 +1,28 @@
+<!--pages/change/change.wxml-->
+<view class="contain">
+  <image src="../../image/background2.jpeg"></image>
+  <view class="head">个人资料</view>
+  <view class="form">
+    <form bindsubmit="submit">
+      <label for="nickname">
+        <text>昵称:</text>
+        <input type="text" placeholder="{{nickname}}" name="nickname" />
+      </label>
+      <label for="constellation">
+        <text>星座:</text>
+        <input type="text" placeholder="{{constellation}}" name="constellation" />
+      </label>
+      <label for="qq">
+        <text>QQ:</text>
+        <input type="text" placeholder="{{qq}}" name="qq" />
+      </label>
+      <label for="phone">
+        <text>电话:</text>
+        <input type="text" placeholder="{{phone}}" name="phone" />
+      </label>
+      <label for="">
+        <button form-type="submit" type="primary">确认</button>
+      </label>
+    </form>
+  </view>
+</view>

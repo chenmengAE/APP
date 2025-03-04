@@ -1,0 +1,126 @@
+.player{
+  position:fixed;
+  top:20rpx;
+  right:20rpx;
+z-index:1;    
+}
+.player>image:first-child{
+  width:80rpx;
+  height:80rpx;
+  animation: musicRotate 3s linear infinite;
+}
+@keyframes musicRotate{
+  from{
+    transform:rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+.player>image:last-child{
+   width: 28rpx;
+   height: 80rpx;
+   margin-left:-5px;
+}
+
+.player-play>image:first-child{
+  animation-play-state:running;
+}
+.player-play>image:last-child{
+ animation:musicStart 0.2s linear forwards;
+}
+.player-paused>image:first-child{
+ animation-play-state:paused;
+}
+.player-pause>image:last-child{
+animation:musicStop 0.2s linear forwards;
+}
+@keyframes musicStart{
+   from{
+     transform:rotate(0deg);
+   }
+   to{
+     transform: rotate(30deg);
+   }
+}
+.swiper-container{
+  width: 100%;
+}
+.item{
+  height: 200px;
+}
+.item image{
+  width: 100%;
+  height: 100%;
+}
+.text{
+  margin: 10rpx;
+  border: solid rgb(248, 175, 175);
+  height: 200rpx;
+}
+.text textarea{
+  display: block;
+  line-height: 70rpx;
+  font-size: medium;
+  color: coral;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;     /* 排列形式: 向下 */
+}
+
+.tr {
+  display: flex;
+  flex-direction: row;
+}
+
+.th, .td {  /* 公有的属性 */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;            /* 自动换行 */
+  width: 20%;					/* 4个25%相加刚好100% */
+  text-align: center;         /* 文本居中 */
+  justify-content:center;     /* 主轴居中 */
+  align-items: center;        /* 交叉轴居中 */
+  border-top: 1px solid #dadada;      /* 单元格上线框 */
+  border-bottom: 1px solid #dadada;   /* 单元格下线框 */
+  border-left: 1px solid #dadada;     /* 单元格左线框 */
+  border-right: 1px solid #dadada;    /* 单元格右线框 */
+}
+.td_mid{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;            /* 自动换行 */
+  width: 60%;					/* 4个25%相加刚好100% */
+  text-align: center;         /* 文本居中 */
+  justify-content:center;     /* 主轴居中 */
+  align-items: center;        /* 交叉轴居中 */
+  border-top: 1px solid #dadada;      /* 单元格上线框 */
+  border-bottom: 1px solid #dadada;   /* 单元格下线框 */
+  border-left: 1px solid #dadada;     /* 单元格左线框 */
+  border-right: 1px solid #dadada;    /* 单元格右线框 */
+  font-size: small;
+}
+
+.th {
+  font-weight: 800;           /* 字体加重 */
+  background-color:#B3CCF4;   /* 背景色 */
+  width: 20%;
+}
+
+.th_mid{
+  font-weight: 800;           /* 字体加重 */
+  background-color:#B3CCF4;   /* 背景色 */
+  width: 60%;
+  text-align: center;
+}
+
+.td {
+  background-color:#edf3e9;   /* 背景色 */
+}
+.td image{
+  width: 140rpx;
+  height: 140rpx;
+}
+

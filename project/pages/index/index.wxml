@@ -1,0 +1,51 @@
+<view class="player player-{{isPlayingMusic?'play':'paused'}}" bindtap="play">
+  <image src="../../image/music_icon.png"></image>
+  <image src="../../image/music_play.png"></image>
+</view>
+<swiper class="swiper-container" indicator-dots circular autoplay interval="3000">
+  <swiper-item>
+    <view class="item">
+      <image src="../../image/a4.jpg" />
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view class="item">
+      <image src="../../image/a2.jpg" />
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view class="item">
+      <image src="../../image/a3.jpg" />
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view class="item">
+      <image src="../../image/a6.jpg" />
+    </view>
+  </swiper-item>
+</swiper>
+<view class="text">
+  <textarea class="">濮阳市共有各类不可移动文物1279处；省级文物保护单位25处；市、县级重点文物保护单位135处。
+  <image src=""></image>
+  </textarea>
+</view>
+<view class="table">
+    <!-- 表头(即第一行) -->
+    <view class="tr">
+        <view class="th">名称</view>
+        <view class="th_mid">简介</view>
+        <view class="th">图片</view>
+    </view>
+    <!-- 表格第二行 -->
+    <view class="tr">
+        <view class="td">戚城遗址</view>
+        <view class="td_mid">戚城又称“孔悝城”，是春秋时卫国的重要城邑。戚城遗址地上的部分为周长1520米的古城残垣，占地面积1440平方米，地下则保存着自6000多年前仰韶文化到汉代等不同时期历史遗存。</view>
+        <view class="td"><image src="../../image/pic1.jpg"></image></view>
+    </view>
+     <!-- 表格第三行 -->
+     <view class="tr">
+        <view class="td">仓颉陵遗址</view>
+        <view class="td_mid">仓颉，今濮阳市南乐县吴村人，相传是黄帝时期造字的史官，仰观天象、俯察鸟兽虫鱼之迹，总结远古各部落的刻划符号文字，从而结束了远古先民结绳纪事的历史，后人尊之为造字圣人。</view>
+        <view class="td"><image src="../../image/pic2.jpg"></image></view>
+    </view>
+</view>

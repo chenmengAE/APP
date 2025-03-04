@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/login/login",
+    "pages/regest/regest",
+    "pages/index/index",
+    "pages/center/center",
+    "pages/find/find",
+    "pages/person/person",
+    "pages/change/change",
+    "pages/order/order",
+    "pages/address/address"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "观光指南",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "image/home.jpeg",
+      "selectedIconPath": "image/home1.jpeg"
+    },
+    {
+      "pagePath": "pages/center/center",
+      "text": "我的",
+      "iconPath": "image/center.jpeg",
+      "selectedIconPath": "image/center1.jpeg"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "requiredBackgroundModes": [
+    "audio"
+  ]
+}
